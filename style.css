@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #181830, #292b2e);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.music-player{
+    width: 400px;
+    padding: 25px 45px;
+    background-color: #92d6e0;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 40px;
+    color:#035966 ;
+    box-shadow: 0 5px 10px rgba(4, 19, 22, 0.397);
+
+}
+
+.song-img{
+    width: 220px;
+    border: 8px solid white;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(4, 19, 22, 0.397);
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+    
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(27, 127, 163);
+    border-radius: 4px;
+    margin: 40px 0;
+    cursor: pointer;
+
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(27, 127, 163);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 10px rgba(4, 19, 22, 0.397);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    color:#035966;
+    box-shadow: 0 5px 10px rgba(4, 19, 22, 0.397);
+
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: rgb(27, 127, 163); 
+    color: white;
+}
+
